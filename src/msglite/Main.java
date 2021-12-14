@@ -3,7 +3,6 @@ package msglite;
 import msglite.resources.c;
 import msglite.resources.database;
 import msglite.txtMessage.TextMessage;
-
 import java.util.Scanner;
 
 public class Main {
