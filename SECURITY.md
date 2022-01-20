@@ -5,7 +5,7 @@
 
 | Version      | Supported          |
 | -------      | ------------------ |
-| Template v1.0  |  No known exploits   |
+| v0.1.2 |  API enforces updates, no known exploits   |
 
 ## Reporting a Vulnerability
 
