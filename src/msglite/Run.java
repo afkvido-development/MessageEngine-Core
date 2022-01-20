@@ -17,7 +17,7 @@ public class Run {
 
 
 
-        dL("", "Running debug logs");
+        dL("[Info] ", "Running debug logs");
         enforceVersion.enforceV();
 
 
