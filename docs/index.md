@@ -1,8 +1,8 @@
 # MessageEngine LITE
 
-### Download Compiled MessageEngine LITE
+### Download MessageEngine LITE
 
-[<img src="https://raw.githubusercontent.com/afkvido/image-repository/ImageRepo/Modern%20Download%20Button.png" width="185"/>](https://github.com/afkvido-development/MessageEngineLITE/releases)
+[<img src="https://raw.githubusercontent.com/afkvido/image-repository/ImageRepo/Modern%20Download%20Button.png" width="185"/>](https://github.com/afkvido-development/MessageEngineLITE/releases/latest)
 
 ### Download Source Code .zip [Latest]
 
