@@ -1,4 +1,4 @@
-# MessageEngine Core
+<h1 align = "center">MessageEngine Core</h1>
 
 [<img src="https://raw.githubusercontent.com/afkvido/image-repository/ImageRepo/Modern%20Download%20Button.png" width="225"/>](https://afkvido-development.github.io/MessageEngine-Core)
 
