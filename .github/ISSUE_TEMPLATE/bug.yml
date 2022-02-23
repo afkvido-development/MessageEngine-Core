@@ -1,7 +1,7 @@
 name: Bug Report
 description: Report a bug to help us improve MessageEngine Core.
 title: '[B] title'
-labels: Bug
+labels: ["Bug"]
 body:
 
   - type: textarea
