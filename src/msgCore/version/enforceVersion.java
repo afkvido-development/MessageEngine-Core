@@ -1,5 +1,6 @@
 package msgCore.version;
 import msgCore.Run;
+import msgCore.i;
 import msgCore.resources.c;
 
 import java.util.Scanner;
@@ -25,17 +26,17 @@ public interface enforceVersion {
 
 
         if (apiConnection.equals("false")) {
-            System.out.println(c.rd + "Cannot connect to MessageEngine API\nMake sure you're on the latest version of MessageEngine LITE");
+            System.out.println(c.rd + "Cannot connect to MessageEngine API\nMake sure you're on the latest version of MessageEngine Core");
             clean = false;
             wait.nextLine();
             System.exit(0);
         } else if (!apiConnection.equals("api\n")) {
-            System.out.println(c.rd + "API error, make sure you're on the latest version of MessageEngine LITE" + c.rs);
+            System.out.println(c.rd + "API error, make sure you're on the latest version of MessageEngine Core" + c.rs);
             clean = false;
             wait.nextLine();
             System.exit(0);
         } else {
-            Run.dL(c.gr + "[Success] ", "Connected to API");
+            i.debugLine("Success", c.gr + "Connected to API");
         }
 
 
@@ -44,27 +45,27 @@ public interface enforceVersion {
         String latest = "waiting";
 
         try {
-            latest = URLreader.check("https://raw.githubusercontent.com/afkvido-development/MessageEngine-API/master/src/api/versions/latest/LITE.yml");
+            latest = URLreader.check("https://raw.githubusercontent.com/afkvido-development/MessageEngine-API/master/src/api/versions/latest/Core.yml");
         } catch (Exception ignored) {}
 
         if (latest.equals("waiting")) {
 
-            Run.dL("Error", c.rd + "API error, make sure you're on the latest version of MessageEngine LITE" + c.rs);
+            i.debugLine("Error", c.rd + "API error, make sure you're on the latest version of MessageEngine Core" + c.rs);
             clean = false;
             wait.nextLine();
             System.exit(0);
 
         } else if (!(Version.Version + "\n").equals(latest)) {
-            Run.dL("Info", c.yw + "You are running MessageEngine " + c.cy + Version.Version + c.yw + ", the latest version is " + c.cy + latest + c.yw + ".");
-            Run.dL("Info", c.rd + "You are on an old version of MessageEngine LITE. \nWe recommend you to run the latest version of MessageEngine LITE" + c.rs);
-            Run.dL("Info", c.cy + "Download the latest version of MessageEngine LITE: https://github.com/afkvido-development/MessageEngineLITE/releases");
+            i.debugLine("Info", c.yw + "You are running MessageEngine Core " + c.cy + Version.Version + c.yw + ", the latest version is " + c.cy + latest + c.yw + ".");
+            i.debugLine("Info", c.rd + "You are on an old version of MessageEngine Core. \nWe recommend you to run the latest version of MessageEngine Core" + c.rs);
+            i.debugLine("Info", c.cy + "Download the latest version of MessageEngine LITE: https://afkvido-development.github.io/MessageEngine-Core/");
             clean = false;
             wait.nextLine();
 
         }
 
         if (clean) {
-            Run.dL(c.gr + "[Success] ", "On latest MessageEngineLITE");
+            i.debugLine("Success", c.gr + "On latest MessageEngine Core");
         }
 
 

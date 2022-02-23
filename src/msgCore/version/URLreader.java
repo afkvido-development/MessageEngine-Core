@@ -1,5 +1,6 @@
 package msgCore.version;
 
+import msgCore.i;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -7,7 +8,7 @@ import java.net.URL;
 public class URLreader {
 
     public static void main(String[] args)  throws Exception {
-        System.out.print(check("https://github.com/afkvido-development/MessageEngine-API/raw/master/src/api/versions/latest.yml"));
+        i.text(check("https://github.com/afkvido-development/MessageEngine-API/raw/master/src/api/versions/Core.yml"));
     }
 
 

@@ -15,7 +15,7 @@ public interface Demo {
         TextMessage message;
 
 
-        i.info(c.wh + "[MessageEngineLITE] " + c.yw + "Running demo");
+        i.info(c.wh + "[MessageEngineLITE] " + c.yw + "Running demo\n");
 
         Account a = new Account("user", tag.DEFAULT);
         Account c = new Account("chat", tag.CHAT);

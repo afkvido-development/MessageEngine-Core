@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Demo" type="Application" factoryName="Application">
+    <output_file path="$PROJECT_DIR$/out/logs/Demo.txt" is_save="true" />
+    <option name="MAIN_CLASS_NAME" value="msgCore.Demo" />
+    <module name="MessageEngine Core" />
+    <option name="PASS_PARENT_ENVS" value="false" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
