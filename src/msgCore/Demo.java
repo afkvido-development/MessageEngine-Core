@@ -4,6 +4,7 @@ import msgCore.resources.account.Account;
 import msgCore.resources.c;
 import msgCore.resources.message.TextMessage;
 import msgCore.resources.tags.tag;
+
 import java.util.Scanner;
 
 public interface Demo {
