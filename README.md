@@ -14,3 +14,6 @@ By [afkvido](https://github.com/afkvido). Made as a utility to help in Java proj
   * [MEC Project Showcase](https://github.com/afkvido-development/MessageEngine-Core/discussions/categories/project-showcase) - Show off a project you've made with MessageEngine Core!
   * [MEC Announcements](https://github.com/afkvido-development/MessageEngine-Core/discussions/categories/announcements) - Our official GitHub announcements page! Important updates and info from staff posted here.
   * [MEC Suggestions](https://github.com/afkvido-development/MessageEngine-Core/discussions/categories/suggestions) - Suggest something for MessageEngine Core.
+
+### Clarification
+MessageEngine Core is not a MessageEngine dependancy. It's just MessageEngine, but not a standalone client. It's for use in other programs.
