@@ -1,4 +1,4 @@
-package msglite.version;
+package msgCore.version;
 
 public final class Version {
 

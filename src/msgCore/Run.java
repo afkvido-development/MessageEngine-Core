@@ -1,12 +1,9 @@
-package msglite;
+package msgCore;
 
-import msglite.resources.c;
-import msglite.txtMessage.TextMessage;
-import msglite.version.enforceVersion;
+import msgCore.resources.c;
+import msgCore.version.enforceVersion;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Run {

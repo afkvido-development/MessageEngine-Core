@@ -1,4 +1,4 @@
-package msglite.resources;
+package msgCore.resources;
 
 public final class c {
 

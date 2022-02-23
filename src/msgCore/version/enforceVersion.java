@@ -1,6 +1,6 @@
-package msglite.version;
-import msglite.Run;
-import msglite.resources.c;
+package msgCore.version;
+import msgCore.Run;
+import msgCore.resources.c;
 
 import java.util.Scanner;
 
