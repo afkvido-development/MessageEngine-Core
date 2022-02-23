@@ -3,14 +3,14 @@
  * All rights reserved.
  */
 
-package msgCore.version;
+package msgCore.resources.message;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class enforceVersion_test {
+class TextMessage_test {
 
-    @Test void enforceV() {
+    @Test void testToString() {
     }
 }

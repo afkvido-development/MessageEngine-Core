@@ -1,6 +1,10 @@
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
+
 package msgCore;
 
-import msgCore.resources.c;
 import msgCore.version.enforceVersion;
 import org.jetbrains.annotations.NotNull;
 
@@ -10,11 +14,11 @@ public class Run {
 
     protected static final Scanner wait = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
 
 
-        dL("[Info] ", "Running debug logs");
+        i.debugLine("[Info] ", "Running debug logs");
         enforceVersion.enforceV();
 
 
@@ -26,11 +30,4 @@ public class Run {
 
     }
 
-    public static void dL (String type, @NotNull String text) {
-
-
-        System.out.println(c.wh + "[MessageEngineLITE] " + type + c.wh + text);
-
-
-    }
 }

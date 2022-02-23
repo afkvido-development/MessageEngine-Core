@@ -3,14 +3,17 @@
  * All rights reserved.
  */
 
-package msgCore.version;
+package msgCore.resources.tags;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class enforceVersion_test {
+class tag_test {
 
-    @Test void enforceV() {
+    @Test void values() {
+    }
+
+    @Test void valueOf() {
     }
 }

@@ -1,7 +1,11 @@
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
+
 package msgCore.version;
 
 import msgCore.i;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;

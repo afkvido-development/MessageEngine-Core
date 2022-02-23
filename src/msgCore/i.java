@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
+
 package msgCore;
 
 import org.jetbrains.annotations.NotNull;

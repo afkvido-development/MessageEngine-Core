@@ -1,7 +1,11 @@
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
+
 package msgCore;
 
 import msgCore.resources.account.Account;
-import msgCore.resources.c;
 import msgCore.resources.message.TextMessage;
 import msgCore.resources.tags.tag;
 
@@ -16,7 +20,7 @@ public interface Demo {
         TextMessage message;
 
 
-        i.info(c.wh + "[MessageEngineLITE] " + c.yw + "Running demo\n");
+        i.info(i.gray + "[MessageEngineLITE] " + i.yellow + "Running demo\n");
 
         Account a = new Account("user", tag.DEFAULT);
         Account c = new Account("chat", tag.CHAT);

@@ -1,7 +1,11 @@
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
+
 package msgCore.version;
 
 import msgCore.i;
-import msgCore.resources.c;
 
 import java.util.Scanner;
 
@@ -26,17 +30,17 @@ public interface enforceVersion {
 
 
         if (apiConnection.equals("false")) {
-            System.out.println(c.rd + "Cannot connect to MessageEngine API\nMake sure you're on the latest version of MessageEngine Core");
+            i.line(i.red + "Cannot connect to MessageEngine API\nMake sure you're on the latest version of MessageEngine Core");
             clean = false;
             wait.nextLine();
             System.exit(0);
         } else if (!apiConnection.equals("api\n")) {
-            System.out.println(c.rd + "API error, make sure you're on the latest version of MessageEngine Core" + c.rs);
+            i.line(i.red + "API error, make sure you're on the latest version of MessageEngine Core");
             clean = false;
             wait.nextLine();
             System.exit(0);
         } else {
-            i.debugLine("Success", c.gr + "Connected to API");
+            i.debugLine("Success", i.red + "Connected to API");
         }
 
 
@@ -50,22 +54,22 @@ public interface enforceVersion {
 
         if (latest.equals("waiting")) {
 
-            i.debugLine("Error", c.rd + "API error, make sure you're on the latest version of MessageEngine Core" + c.rs);
+            i.debugLine("Error", i.red + "API error, make sure you're on the latest version of MessageEngine Core" + i.white);
             clean = false;
             wait.nextLine();
             System.exit(0);
 
         } else if (!(Version.Version + "\n").equals(latest)) {
-            i.debugLine("Info", c.yw + "You are running MessageEngine Core " + c.cy + Version.Version + c.yw + ", the latest version is " + c.cy + latest + c.yw + ".");
-            i.debugLine("Info", c.rd + "You are on an old version of MessageEngine Core. \nWe recommend you to run the latest version of MessageEngine Core" + c.rs);
-            i.debugLine("Info", c.cy + "Download the latest version of MessageEngine LITE: https://afkvido-development.github.io/MessageEngine-Core/");
+            i.debugLine("Info", i.yellow + "You are running MessageEngine Core " + i.cyan + Version.Version + i.yellow + ", the latest version is " + i.cyan + latest + i.yellow + ".");
+            i.debugLine("Info", i.red + "You are on an old version of MessageEngine Core. \nWe recommend you to run the latest version of MessageEngine Core" + i.white);
+            i.debugLine("Info", i.cyan + "Download the latest version of MessageEngine LITE: https://afkvido-development.github.io/MessageEngine-Core/");
             clean = false;
             wait.nextLine();
 
         }
 
         if (clean) {
-            i.debugLine("Success", c.gr + "On latest MessageEngine Core");
+            i.debugLine("Success", i.green + "On latest MessageEngine Core");
         }
 
 

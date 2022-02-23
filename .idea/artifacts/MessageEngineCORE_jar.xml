@@ -4,6 +4,7 @@
     <root id="archive" name="MessageEngine-Core.jar">
       <element id="module-output" name="MessageEngine Core" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/20.1.0/annotations-20.1.0.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/msgCore/version/.version" />
     </root>
   </artifact>
 </component>

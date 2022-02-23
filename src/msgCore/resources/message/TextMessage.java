@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
+
 package msgCore.resources.message;
 
 import msgCore.i;
@@ -44,18 +49,16 @@ public class TextMessage {
     /** Constructor initializes a new TextMessage   <p></p>
      * @author gemsvidø
      * @since 0.0.0 */
-    public TextMessage(@NotNull Account auth, @NotNull String msg, @NotNull Account rcp) {
-        author = auth;
-        message = msg;
-        recipient = rcp;
-
-
+    public TextMessage (@NotNull Account Author, @NotNull String Message, @NotNull Account Recipient) {
+        this.author = Author;
+        this.message = Message;
+        this.recipient = Recipient;
     }
 
     /** Rendered TextMessage   <p></p>
      * @author gemsvidø
      * @since 0.0.0 */
-    public @NotNull String toString () {
+    public @NotNull @Override String toString () {
         return ConstructString();
     }
 
