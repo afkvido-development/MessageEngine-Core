@@ -14,14 +14,10 @@ class Account_test {
     @Test void setUsername() {
     }
 
-    @Test void setTag() {
-    }
 
     @Test void testToString() {
     }
 
-    @Test void getTag() {
-    }
 
     @Test void getUsername() {
     }

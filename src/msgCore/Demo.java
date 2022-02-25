@@ -7,7 +7,6 @@ package msgCore;
 
 import msgCore.resources.account.Account;
 import msgCore.resources.message.TextMessage;
-import msgCore.resources.tags.tag;
 
 import java.util.Scanner;
 
@@ -22,8 +21,8 @@ public interface Demo {
 
         i.info(i.gray + "[MessageEngineLITE] " + i.yellow + "Running demo\n");
 
-        Account a = new Account("user", tag.DEFAULT);
-        Account c = new Account("chat", tag.CHAT);
+        Account a = new Account("user", "", "", true);
+        Account c = new Account("chat", "", "", false);
 
         while (true) {
             sc2 = sc1.nextLine();
